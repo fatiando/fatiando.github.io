@@ -1,0 +1,532 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <title>Fatiando a Terra</title>
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/style.css" />
+    <link rel="stylesheet" type="text/css" href="_static/fontawesome/css/all.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.png"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+
+    
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://www.fatiando.org/_static/fatiando-logo-background.png">
+    <meta name="twitter:site" content="@fatiandoaterra">
+    <meta name="twitter:title" content="Fatiando a Terra">
+    <meta name="twitter:description" content="Open-source tools for geophysics">
+
+    <meta property="og:title" content="Fatiando a Terra">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.fatiando.org/">
+    <meta property="og:site_name" content="Fatiando a Terra">
+    <meta property="og:image" content="https://www.fatiando.org/_static/fatiando-logo-background.png">
+    <meta property="og:description" content="Open-source tools for geophysics">
+
+    <!-- Include Google Fonts CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CRaleway:200" rel="stylesheet">
+
+    <!-- Google Analytics tracking code -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
+            Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-38125837-1', 'auto', {'storage': 'none'});
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+
+  </head><body>
+
+    
+        <div class="container-fluid banner"
+             style="background-image: linear-gradient(to bottom, transparent, #02020e55), url(_static/background.svg);">
+            
+<div class="container-fluid menu text-center">
+    <div class="col-lg-12">
+        
+            <ul class="menu-list">
+                    <li><a href="#about"><strong>About</strong></a></li>
+                    <li><a href="#projects"><strong>Projects</strong></a></li>
+                    <li><a href="#getting-started"><strong>Getting Started</strong></a></li>
+                    <li><a href="#support"><strong>Support</strong></a></li>
+                    <li><a href="#contact"><strong>Contact</strong></a></li>
+                    <li><a href="#contribute"><strong>Contribute</strong></a></li>
+                    <li><a href="https://github.com/fatiando" target="_blank" title="Github"><i class="fab fa-github fa-lg"></i></a></li>
+                    <li><a href="http://contact.fatiando.org" target="_blank" title="Slack chat group"><i class="fab fa-slack fa-lg"></i></a></li>
+                    <li><a href="https://twitter.com/fatiandoaterra" target="_blank" title="Twitter"><i class="fab fa-twitter fa-lg"></i></a></li>
+                    <li><a href="https://www.youtube.com/fatiandoorg" target="_blank" title="YouTube channel"><i class="fab fa-youtube fa-lg"></i></a></li>
+            </ul>
+        
+    </div>
+</div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-2 col-xs-0">
+                    </div>
+                    <div class="col-lg-8 col-sm-8 col-xs-12">
+                        <img class="banner-logo center-block" src="_static/banner.svg">
+                    </div>
+                    <div class="col-lg-2 col-sm-2 col-xs-0">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <div class="container">
+        <div class="section" id="about">
+<span id="id1"></span><h1>About</h1>
+<div class="row text-center">
+   <div class="col-sm-4">
+      <h2><i class="fas fa-toolbox fa-2x"></i></h2>
+      <b>Open-source</b>
+      <br>
+      We develop Python packages for Geophysics data processing, modeling, and more.
+   </div>
+   <div class="col-sm-4">
+      <h2><i class="fas fa-drafting-compass fa-2x"></i></h2>
+      <b>Carefully designed and tested</b>
+      <br>
+      Our software strictly follows development best practices.
+   </div>
+   <div class="col-sm-4">
+      <h2><i class="fas fa-copy fa-2x"></i></h2>
+      <b>Comprehensive documentation</b>
+      <br>
+      Tutorials, examples, theory, and real data applications.
+   </div>
+</div><div class="gallery text-center">
+   <div class="row">
+      <div class="col-sm-6">
+         <div class="row">
+            <div class="col-xs-6 gallery-img">
+               <a target="_blank" href="https://www.fatiando.org/harmonica/latest/gallery/gravity_disturbance.html">
+               <img src="_static/gallery/gallery-disturbance.jpg">
+               </a>
+            </div>
+            <div class="col-xs-6 gallery-img">
+               <a target="_blank" href="https://www.fatiando.org/rockhound/latest/gallery/bedmap2.html">
+               <img src="_static/gallery/gallery-bedmap.jpg">
+               </a>
+            </div>
+         </div>
+      </div>
+      <div class="col-sm-6">
+         <div class="row">
+            <div class="col-xs-6 gallery-img">
+               <a target="_blank" href="https://www.fatiando.org/verde/latest/gallery/blockreduce.html">
+               <img src="_static/gallery/gallery-blockmean.jpg">
+               </a>
+            </div>
+            <div class="col-xs-6 gallery-img">
+               <a target="_blank" href="https://www.fatiando.org/rockhound/latest/gallery/seafloor_age.html">
+               <img src="_static/gallery/gallery-seafloorage.jpg">
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div></div>
+<div class="section" id="the-tools">
+<span id="projects"></span><h1>The Tools</h1>
+<p>We maintain several Python projects which are in various stages of development: from
+early design to polished and published products. We’ll also be adding new projects to
+our toolkit in the future (see how you can <a class="reference internal" href="#contribute"><span class="std std-ref">get involved</span></a>).</p>
+ <div class="row">
+
+    <div class="col-sm-6 project">
+
+       <a href="http://www.fatiando.org/verde">
+          <img class="project-logo center-block" src="_static/verde-logo.svg">
+       </a>
+
+       <p>
+       Spatial data processing and interpolation (<b>gridding</b>) using
+       Green's functions (or radial basis functions) with a
+       machine learning inspired interface.
+       </p>
+
+       <a href="https://pypi.python.org/pypi/verde">
+       <img src="https://img.shields.io/pypi/v/verde.svg?style=flat-square"
+            alt="Latest release on PyPI">
+       </a>
+       <a href="https://pypi.python.org/pypi/verde">
+       <img src="https://img.shields.io/pypi/pyversions/verde.svg?style=flat-square"
+            alt="Compatible Python versions">
+       </a>
+
+       <ul class="fa-ul project-icons">
+          <li><i class="fa-li fab fa-github fa-fw" title="Github repository"></i>
+             <a href="https://github.com/fatiando/verde">fatiando/verde</a>
+          </li>
+          <li><i class="fa-li fa fa-book fa-fw" title="Documentation"></i>
+             <a href="http://www.fatiando.org/verde">www.fatiando.org/verde</a>
+          </li>
+          <li><i class="fa-li fas fa-bookmark fa-fw" title="Publication"></i>
+             doi: <a href="https://doi.org/10.21105/joss.00957">10.21105/joss.00957</a>
+          </li>
+          <li><i class="fa-li fa fa-check fa-fw" style="color: green" title="Project status"></i>
+             Stable and ready for use
+          </li>
+       </ul>
+
+    </div>
+
+    <div class="col-sm-6 project">
+
+       <a href="http://www.fatiando.org/pooch">
+          <img class="project-logo center-block" src="_static/pooch-logo.svg">
+       </a>
+
+       <p>
+       Manages the <b>download of data</b> files from a server, storing them
+       in a local directory, and handling updates if required. Used by our
+       other libraries.
+       </p>
+
+       <a href="https://pypi.python.org/pypi/pooch">
+       <img src="https://img.shields.io/pypi/v/pooch.svg?style=flat-square"
+            alt="Latest release on PyPI">
+       </a>
+       <a href="https://pypi.python.org/pypi/pooch">
+       <img src="https://img.shields.io/pypi/pyversions/pooch.svg?style=flat-square"
+            alt="Compatible Python versions">
+       </a>
+
+       <ul class="fa-ul project-icons">
+          <li><i class="fa-li fab fa-github fa-fw" title="Github repository"></i>
+             <a href="https://github.com/fatiando/pooch">fatiando/pooch</a>
+          </li>
+          <li><i class="fa-li fa fa-book fa-fw" title="Documentation"></i>
+             <a href="http://www.fatiando.org/pooch">www.fatiando.org/pooch</a>
+          </li>
+          <li><i class="fa-li fas fa-bookmark fa-fw" title="Publication"></i>
+             doi: <a href="https://doi.org/10.21105/joss.01943">10.21105/joss.01943</a>
+          </li>
+          <li><i class="fa-li fa fa-check fa-fw" style="color: green" title="Project status"></i>
+             Stable and ready for use
+          </li>
+       </ul>
+
+    </div>
+
+ </div>
+
+ <div class="row">
+
+    <div class="col-sm-6 project">
+
+       <a href="http://www.fatiando.org/harmonica">
+          <img class="project-logo center-block" src="_static/harmonica-logo.svg">
+       </a>
+
+       <p>
+       Processing and modeling <b>gravity</b> and <b>magnetic</b> data, like terrain
+       correction, upward continuation, equivalent layers, 3D inversion, and more.
+       </p>
+
+       <a href="https://pypi.python.org/pypi/harmonica">
+       <img src="https://img.shields.io/pypi/v/harmonica.svg?style=flat-square"
+            alt="Latest release on PyPI">
+       </a>
+       <a href="https://pypi.python.org/pypi/harmonica">
+       <img src="https://img.shields.io/pypi/pyversions/harmonica.svg?style=flat-square"
+            alt="Compatible Python versions">
+       </a>
+
+       <ul class="fa-ul project-icons">
+          <li><i class="fa-li fab fa-github fa-fw" title="Github repository"></i>
+             <a href="https://github.com/fatiando/harmonica">fatiando/harmonica</a>
+          </li>
+          <li><i class="fa-li fa fa-book fa-fw" title="Documentation"></i>
+             <a href="http://www.fatiando.org/harmonica">www.fatiando.org/harmonica</a>
+          </li>
+          <li><i class="fa-li fa fa-sync-alt fa-fw" style="color: green" title="Project status"></i>
+             Ready for use but still changing
+          </li>
+       </ul>
+
+    </div>
+
+    <div class="col-sm-6 project">
+
+       <a href="http://www.fatiando.org/boule">
+          <img class="project-logo center-block" src="_static/boule-logo.svg">
+       </a>
+
+       <p>
+       Reference <b>ellipsoids</b> for geodesy and geophysics. Calculates
+       <b>Normal gravity</b> and coordinate conversions for the Earth and
+       other plantery bodies.
+       </p>
+
+       <a href="https://pypi.python.org/pypi/boule">
+       <img src="https://img.shields.io/pypi/v/boule.svg?style=flat-square"
+            alt="Latest release on PyPI">
+       </a>
+       <a href="https://pypi.python.org/pypi/boule">
+       <img src="https://img.shields.io/pypi/pyversions/boule.svg?style=flat-square"
+            alt="Compatible Python versions">
+       </a>
+
+       <ul class="fa-ul project-icons">
+          <li><i class="fa-li fab fa-github fa-fw" title="Github repository"></i>
+             <a href="https://github.com/fatiando/boule">fatiando/boule</a>
+          </li>
+          <li><i class="fa-li fa fa-book fa-fw" title="Documentation"></i>
+             <a href="http://www.fatiando.org/boule">www.fatiando.org/boule</a>
+          </li>
+          <li><i class="fa-li fa fa-sync-alt fa-fw" style="color: green" title="Project status"></i>
+             Ready for use but still changing
+          </li>
+       </ul>
+
+    </div>
+
+</div>
+
+ <div class="row">
+
+    <div class="col-sm-6 project">
+
+       <a href="http://www.fatiando.org/rockhound">
+          <img class="project-logo center-block" src="_static/rockhound-logo.svg">
+       </a>
+
+       <p>
+       Download geophysical models and datasets (PREM, CRUST1.0, ETOPO1) and load them
+       into Python. Relies on Pooch to manage the downloads.
+       </p>
+
+       <a href="https://pypi.python.org/pypi/rockhound">
+       <img src="https://img.shields.io/pypi/v/rockhound.svg?style=flat-square"
+            alt="Latest release on PyPI">
+       </a>
+       <a href="https://pypi.python.org/pypi/rockhound">
+       <img src="https://img.shields.io/pypi/pyversions/rockhound.svg?style=flat-square"
+            alt="Compatible Python versions">
+       </a>
+
+       <ul class="fa-ul project-icons">
+          <li><i class="fa-li fab fa-github fa-fw" title="Github repository"></i>
+             <a href="https://github.com/fatiando/rockhound">fatiando/rockhound</a>
+          </li>
+          <li><i class="fa-li fa fa-book fa-fw" title="Documentation"></i>
+             <a href="http://www.fatiando.org/rockhound">www.fatiando.org/rockhound</a>
+          </li>
+          <li><i class="fa-li fa fa-sync-alt fa-fw" style="color: green" title="Project status"></i>
+             Ready for use but still changing
+          </li>
+       </ul>
+
+    </div>
+
+    <div class="col-sm-6 project">
+    </div>
+
+ </div></div>
+<div class="section" id="getting-started">
+<span id="id2"></span><h1>Getting Started</h1>
+<h2><i class="fas fa-laptop"></i> Install</h2><p>In order to start using the Fatiando tools you need to <strong>install a Python
+distribution</strong>. We recommend using <a class="reference external" href="https://www.anaconda.com/products/individual">Anaconda</a>. You can find detailed
+instructions on how to install it on any operating system in the <a class="reference external" href="https://carpentries.github.io/workshop-template/#python">Software
+Carpentry setup instructions</a>.</p>
+<p>Once you’ve finished setting up Anaconda, you can install all of the latest
+Fatiando tools using the <code class="docutils literal notranslate"><span class="pre">conda</span></code> package manager (recommended) with a single
+command (run this in a terminal or “Anaconda prompt” on Windows):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="n">verde</span> <span class="n">harmonica</span> <span class="n">rockhound</span> <span class="n">boule</span> <span class="n">pooch</span> <span class="o">--</span><span class="n">channel</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span>
+</pre></div>
+</div>
+<p>Alternatively, you can use the <a class="reference external" href="https://pypi.org/project/pip/">pip package manager</a>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">verde</span> <span class="n">harmonica</span> <span class="n">rockhound</span> <span class="n">boule</span> <span class="n">pooch</span>
+</pre></div>
+</div>
+<h2><i class="fas fa-user-graduate"></i> Learn</h2><p><a class="reference external" href="https://www.youtube.com/fatiandoorg">Our YouTube channel</a>
+has a <strong>tutorial on how to use Verde</strong> for gridding scattered data that may help
+you to get started.
+Afterwards, you can learn more about each particular tool by visiting their
+<strong>documentation pages</strong> (see links to each in <a class="reference internal" href="#projects"><span class="std std-ref">The Tools</span></a>).</p>
+<div class="embed-responsive embed-responsive-16by9 youtube">
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/-xZdNdvzm3E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div><h2><i class="fas fa-rocket"></i> New to Python?</h2><p>If you don’t have much experience with Python, <strong>don’t worry!</strong>
+A great place to start learning Python for scientific computation and much more
+is <a class="reference external" href="https://software-carpentry.org">Software Carpentry</a>.
+We recommend starting with these two lessons (also available in Spanish):</p>
+<ul class="fa-ul icon-list-small">
+   <li>
+      <i class="fa-li fa fa-book fa-fw"></i>
+      <a href="https://swcarpentry.github.io/python-novice-inflammation/">Programming with Python</a>
+   </li>
+   <li>
+      <i class="fa-li fa fa-book fa-fw"></i>
+      <a href="https://swcarpentry.github.io/python-novice-gapminder/">Plotting and Programming in Python</a>
+   </li>
+</ul></div>
+<div class="section" id="support-fatiando">
+<span id="support"></span><h1>Support Fatiando</h1>
+<p>All Fatiando projects are <strong>made by scientists and volunteers</strong> who generously donate
+their time and attention. Here are some of the ways in which you can help support the
+project and give back to the community:</p>
+<div class="row text-center">
+   <div class="col-sm-4">
+      <h2><i class="fas fa-users fa-2x"></i></h2>
+      <b>Join the community</b>
+      <br>
+      Get involved in our projects and help shape their future. See below how you
+      can <a href="#contact">participate in the conversation</a> and
+      <a href="#contribute">make contributions</a>.
+   </div>
+   <div class="col-sm-4">
+      <h2><i class="fas fa-share-alt fa-2x"></i></h2>
+      <b>Spread the word</b>
+      <br>
+      Share links in social media, publish your analysis
+      code that uses Fatiando, include our logo in talks and posters (sources in
+      <a href="https://github.com/fatiando/logo"><i class="fab fa-github"></i>
+      fatiando/logo</a>), etc.
+   </div>
+   <div class="col-sm-4">
+      <h2><i class="fas fa-bookmark fa-2x"></i></h2>
+      <b>Cite the projects</b>
+      <br>
+      Citations help us justify the effort that goes into building and maintaining
+      this project.
+      There are
+      <a href="https://github.com/fatiando/verde/blob/master/CITATION.rst">CITATION.rst</a>
+      files in each project explaining how to cite it (and also a page in the
+      documentation).
+   </div>
+</div></div>
+<div class="section" id="contacting-us">
+<span id="contact"></span><h1>Contacting Us</h1>
+<div class="row text-center">
+   <div class="col-sm-4">
+      <h2><i class="fab fa-github fa-2x"></i></h2>
+      Most discussions happen on <a href="https://github.com/fatiando">Github</a>.
+      <a href="https://github.com/fatiando/contributing/blob/master/CONTRIBUTING.md#reporting-a-bug">Open
+      an issue</a> to <strong>report bugs</strong> and <strong>request features</strong>.
+      Leave a comment on any open issue or pull request to join the
+      conversation.
+   </div>
+   <div class="col-sm-4">
+      <h2><i class="fab fa-slack fa-2x"></i></h2>
+      Hop on to our <a href="http://contact.fatiando.org">chat room on Slack</a>
+      where you can <strong>ask questions</strong>, leave comments, and
+      reach out to users and developers.
+   </div>
+   <div class="col-sm-4">
+      <h2><i class="fab fa-twitter fa-2x"></i></h2>
+      Follow us on Twitter <a href="https://twitter.com/fatiandoaterra">@fatiandoaterra</a>
+      where we post occasional <strong>updates</strong> about the project.
+   </div>
+</div></div>
+<div class="section" id="getting-involved">
+<span id="contribute"></span><h1>Getting Involved</h1>
+<p><strong>We want your help!</strong>
+Fatiando is a <strong>community-developed</strong> project, so it’s people like you that
+make it useful and successful.</p>
+<h2><i class="fa fa-comments"></i> Participate in the community</h2><p><strong>Open-source is more than just code, it’s about the people involved</strong>.
+The most important thing you can do for any project is participate in the
+community: ask and answer questions, share your experience, help guide the
+development, and make friends along the way.</p>
+<p><strong>IMPORTANT:</strong> Everyone is expected to abide by our
+<a class="reference external" href="https://github.com/fatiando/contributing/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a>
+when participating in the Fatiando community. Please review it carefully.</p>
+<p>The Fatiando community gathers in a few different places, <strong>all of which are
+completely open to everyone</strong>. So come along and join the conversation:</p>
+<ul class="fa-ul icon-list-small">
+   <li>
+   <i class="fa-li fab fa-slack fa-fw"></i> <a href="http://contact.fatiando.org/">Slack</a>:
+   where most conversation happens about meetings, events, questions, etc.
+   </li>
+   <li>
+   <i class="fa-li fab fa-github fa-fw"></i> <a href="https://github.com/fatiando/">GitHub</a>:
+   where we discuss development details, review code, etc.
+   </li>
+   <li>
+   <i class="fa-li fa fa-microphone-alt fa-fw"></i> <a href="https://github.com/fatiando/meeting-notes">Community Calls</a>:
+   regular video calls to discuss the latest developments, project
+   directions, and have a little social interaction. <strong>We welcome everyone
+   interested in Fatiando to take part!</strong> Calls happen once a month (check
+   <a href="http://calendar.fatiando.org">our calendar</a> for the next one)
+   and are live-streamed to
+   <a href="https://www.youtube.com/FatiandoOrg">our YouTube channel</a>.
+   Check the <a href="https://github.com/fatiando/meeting-notes">meeting notes</a>
+   for more information.
+   <br>
+   <div class="embed-responsive embed-responsive-16by9 youtube">
+   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLPA_RM8wsOqIEBLICo3v7f_A1WnLcwJld" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div>
+   </li>
+</ul><h2><i class="fa fa-cog"></i> Join the development</h2><p>There may be a little voice inside your head that is telling you that you’re
+not ready; that your skills aren’t nearly good
+enough to contribute.
+What could you possibly offer?
+We assure you that the little voice in your head is wrong.</p>
+<p><strong>Being a contributor doesn’t just mean writing code</strong>.
+There are many ways to contribute:</p>
+<ul class="fa-ul icon-list-small">
+   <li><i class="fa-li fa fa-bug fa-fw"></i> Submitting bug reports and feature requests</li>
+   <li><i class="fa-li fa fa-book fa-fw"></i> Writing tutorials or examples</li>
+   <li><i class="fa-li fa fa-hammer fa-fw"></i> Fixing typos and improving to the documentation</li>
+   <li><i class="fa-li fa fa-terminal fa-fw"></i> Writing code for everyone to use</li>
+</ul>Have a look at our
+<a href="https://github.com/fatiando/contributing/blob/master/CONTRIBUTING.md">Contributing Guide</a>
+to see how you can get involved.
+This and other guides (for project maintenance, etc.) can be found in the
+<a href="https://github.com/fatiando/contributing"><i class="fab fa-github"></i> fatiando/contributing</a> repository.</div>
+<div class="section" id="looking-for-the-fatiando-package">
+<h1>Looking for the <code class="docutils literal notranslate"><span class="pre">fatiando</span></code> package?</h1>
+<p><strong>It still exists!</strong>
+While development of the <code class="docutils literal notranslate"><span class="pre">fatiando</span></code> library has stopped (in favor of
+<a class="reference internal" href="#projects"><span class="std std-ref">our new libraries</span></a>),
+you can still view the
+<a class="reference external" href="https://www.fatiando.org/v0.5/">documentation for the last release (v0.5)</a>
+and the <a class="reference external" href="https://github.com/fatiando/fatiando">source code archive on Github</a>.
+The library will remain archived and usable for the foreseeable future.
+To get a sense for the reasoning behind the choice to abandon <code class="docutils literal notranslate"><span class="pre">fatiando</span></code>, please read
+<a class="reference external" href="http://www.leouieda.com/blog/future-of-fatiando.html">this blog post</a>.</p>
+</div>
+
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <p class="text-center">
+                &copy; Copyright 2010-2020, The Fatiando a Terra Developers.
+                Created using <a
+                    href="http://sphinx-doc.org/">Sphinx</a> 3.3.1.
+            </p>
+        </div>
+    </footer>
+
+
+  </body>
+</html>
