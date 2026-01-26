@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+  <title>About | Fatiando a Terra</title>
+
+  <link rel="shortcut icon" href="../_static/favicon.png"/>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../_static/bootstrap-5.1/css/bootstrap.min.css">
+
+  <!-- FontAwsome icons -->
+  <link rel="stylesheet" href="../_static/css/fontawesome/css/all.css">
+
+  <!-- Pygments CSS for syntax highlighting -->
+  <!-- Accessible versions by Max Chadwick (@mpchadwick) -->
+  <link rel="stylesheet" href="../_static/css/pygments/native.css">
+
+  <!-- Custom CSS set in conf.py -->
+  <link rel="stylesheet" href="../_static/css/style.css">
+
+  <!-- Social media cards -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="https://www.fatiando.org/_static/">
+  <meta name="twitter:site" content="@fatiandoaterra">
+  <meta name="twitter:title" content="About | Fatiando a Terra">
+  <meta name="twitter:description" content="Open-source Python tools for geophysics">
+  <meta property="og:title" content="About | Fatiando a Terra">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.fatiando.org">
+  <meta property="og:site_name" content="Fatiando a Terra">
+  <meta property="og:image" content="https://www.fatiando.org/_static/">
+  <meta property="og:description" content="Open-source Python tools for geophysics">
+
+  <!-- Plausible analytics for anonymous usage statistics -->
+  <script defer data-domain="fatiando.org" src="https://plausible.io/js/plausible.js"></script>
+</head>
+
+
+<body>
+
+  <header class="menu">
+    <div class="container">
+      <nav>
+        <ul class="nav justify-content-center">
+          <li class="nav-item ">
+            <a href="../index.html"><img title="Home" alt="Fatiando a Terra" src="../_static/fatiando-logo.svg"></a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../install">Install</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../learn">Learn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../community">Community</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../cite">Cite</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../support">Support</a>
+            </li>
+            <li class="nav-item">
+              <a rel="me" class="nav-link" href="https://github.com/fatiando" target="_blank"><i class="fab fa-github" title="GitHub" alt="GitHub"></i></a>
+            </li>
+            <li class="nav-item">
+              <a rel="me" class="nav-link" href="https://fosstodon.org/@fatiando" target="_blank"><i class="fab fa-mastodon" title="Mastodon" alt="Mastodon"></i></a>
+            </li>
+            <li class="nav-item">
+              <a rel="me" class="nav-link" href="https://twitter.com/fatiandoaterra" target="_blank"><i class="fab fa-twitter" title="Twitter" alt="Twitter"></i></a>
+            </li>
+            <li class="nav-item">
+              <a rel="me" class="nav-link" href="https://www.linkedin.com/company/fatiando" target="_blank"><i class="fab fa-linkedin" title="LinkedIn" alt="LinkedIn"></i></a>
+            </li>
+            <li class="nav-item">
+              <a rel="me" class="nav-link" href="https://www.youtube.com/fatiandoorg" target="_blank"><i class="fab fa-youtube" title="YouTube" alt="YouTube"></i></a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    <div class="container page-content narrow">
+      <section id="about">
+<h1>About</h1>
+<div class="lead">
+<em>Fatiando a Terra</em> is a collection of <strong>open-source Python
+packages</strong> aimed primarily at Geophysics (though not exclusively).
+This page contains some information about the project and its history.
+</div>
+<div class="admonition-trivia admonition">
+<p class="admonition-title">Trivia</p>
+<p><em>Fatiando a Terra</em> is Portuguese for <em>Slicing the Earth</em>, a reference to the
+project’s Brazilian origins and ambitious initial goals to model the whole
+planet.</p>
+</div>
+<section id="brief-history">
+<h2>Brief history</h2>
+<p>The Fatiando a Terra project had it’s start around 2008 as a C++ program to
+perform geophysical modeling of various data types (gravity, magnetics,
+seismic, etc.).
+At least that was what a
+<a class="reference internal" href="../community/index.html#founders"><span class="std std-ref">small group of Geophysics undergraduate students</span></a> at the
+<a class="reference external" href="https://www.iag.usp.br/">University of São Paulo</a>, Brazil, set out to do.
+Unsurprisingly, this overly ambitious goal was never achieved.</p>
+<div class="row text-muted align-items-center fs-6">
+<div class="col-md-9">
+<img src="../_static/fatiando-as-a-gravmag-gui.svg" alt="Box diagram of the layout and flow of information planned for the GUI program." >
+</div>
+<div class="col-md-3">
+<p>First diagram (in Portuguese) of the planned graphical user interface (GUI) for
+the Fatiando C++ program.
+Retrieved from commit <a class="reference external" href="https://github.com/fatiando/fatiando/blob/10c8ff7c17df53e3e0abd83f1ce8d2a3f6bc57aa/fluxo-simples.pdf"><i class="fab fa-github"></i> 10c8ff7</a>
+from 11 February 2009.</p>
+</div>
+</div>
+<p>In 2010, we started developing the <a class="reference external" href="https://github.com/fatiando/fatiando"><code class="docutils literal notranslate"><span class="pre">fatiando</span></code></a>
+Python library, which included several state-of-the-art methods for forward
+modeling and inversion of gravity and magnetic data, as well as toy problems in
+other fields useful for teaching.
+Development of this library was discontinued in 2018  as our focus shifted to
+our newer and more well-scoped libraries.
+This <a class="reference external" href="https://www.leouieda.com/blog/future-of-fatiando.html">blog post announcing the shift</a> explains the
+reasoning behind this decision.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The last version that was released of <code class="docutils literal notranslate"><span class="pre">fatiando</span></code> is <a class="reference external" href="https://doi.org/10.5281/zenodo.157746">v0.5</a>.
+The documentation for it can still be accessed at
+<a class="reference external" href="https://legacy.fatiando.org">legacy.fatiando.org</a></p>
+</div>
+<div class="row text-muted align-items-center fs-6">
+<div class="col-md-9">
+<!-- Thumbnail of Youtube video -->
+<div class="ratio ratio-16x9">
+  <div class="yt" style='background-image: url("/_static/fatiando-talks.jpg")'>
+    <a
+      href="https://www.youtube.com/watch?v=z-5dvWfB_SM&list=PLPA_RM8wsOqLQRajw_e9ByUe56z7TETaL"
+      aria-label="Watch on YouTube"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <div class="play-button">
+        <img src="/_static/play.svg">
+      </div>
+    </a>
+    <a
+      href="https://www.youtube.com/watch?v=z-5dvWfB_SM&list=PLPA_RM8wsOqLQRajw_e9ByUe56z7TETaL"
+      aria-label="Watch on YouTube"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <div class="watch-on-yt">
+        <div aria-hidden="true">Watch on</div>
+        <div><img src="/_static/yt-logo.svg" alt="YouTube logo"></div>
+      </div>
+    </a>
+  </div>
+</div>
+</div>
+<div class="col-md-3">
+<p>Our <a class="reference external" href="https://www.youtube.com/fatiandoorg">YouTube channel</a> has a <a class="reference external" href="https://youtube.com/playlist?list=PLPA_RM8wsOqLQRajw_e9ByUe56z7TETaL">playlist of talks</a> given
+about Fatiando over the years.</p>
+</div>
+</div>
+</section>
+<section id="the-geophysics-python-ecosystem">
+<h2>The geophysics Python ecosystem</h2>
+<p>Fatiando is a part of the larger geophysics open-source Python ecosystem,
+which has grown tremendously since we started development in 2010.</p>
+<div class="row gy-4 py-3 align-items-center">
+<div class="col-6 col-sm-4 col-md-3">
+  <a target="_blank" href="https://simpeg.xyz/">
+  <img src="../_static/simpeg-logo.png" title="SimPEG">
+  </a>
+</div>
+<div class="col-6 col-sm-4 col-md-3">
+  <a target="_blank" href="https://www.gempy.org/">
+  <img src="../_static/gempy-logo.png" title="GemPy">
+  </a>
+</div>
+<div class="col-6 col-sm-4 col-md-3">
+  <a target="_blank" href="https://emsig.xyz/">
+  <img src="../_static/emsig-logo.svg" title="emsig">
+  </a>
+</div>
+<div class="col-6 col-sm-4 col-md-3">
+  <a target="_blank" href="https://docs.pyvista.org/">
+  <img src="../_static/pyvista-logo.png" title="PyVista">
+  </a>
+</div>
+<div class="col-6 col-sm-4 col-md-3">
+  <a target="_blank" href="https://www.pygimli.org/">
+  <img src="../_static/pygimli-logo.svg" title="pyGIMLi">
+  </a>
+</div>
+<div class="col-6 col-sm-4 col-md-3">
+  <a target="_blank" href="https://softwareunderground.github.io/subsurface/">
+  <img src="../_static/subsurface-logo.svg" title="subsurface">
+  </a>
+</div>
+<div class="col-6 col-sm-4 col-md-3">
+  <a target="_blank" href="https://www.pygmt.org/">
+  <img src="../_static/pygmt-logo.svg" title="PyGMT">
+  </a>
+</div>
+<div class="col-6 col-sm-4 col-md-3">
+  <img src="../_static/fatiando-banner-small.svg" title="Fatiando a Terra">
+</div>
+</div>
+</section>
+</section>
+
+    </div>
+
+  <footer class="footer">
+    <div class="container narrow">
+      <nav>
+        <ul class="menu-list-footer">
+          <li><a href="../index.html">Home</a></li>
+            <li><a href="../about">About</a></li>
+            <li><a href="../install">Install</a></li>
+            <li><a href="../learn">Learn</a></li>
+            <li><a href="../contact">Contact</a></li>
+            <li><a href="../community">Community</a></li>
+            <li><a href="../cite">Cite</a></li>
+            <li><a href="../support">Support</a></li>
+            <li>
+              <a href="https://github.com/fatiando" target="_blank"><i class="fab fa-github" title="GitHub" alt="GitHub"></i></a>
+            </li>
+            <li>
+              <a href="https://fosstodon.org/@fatiando" target="_blank"><i class="fab fa-mastodon" title="Mastodon" alt="Mastodon"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/fatiandoaterra" target="_blank"><i class="fab fa-twitter" title="Twitter" alt="Twitter"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/fatiando" target="_blank"><i class="fab fa-linkedin" title="LinkedIn" alt="LinkedIn"></i></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/fatiandoorg" target="_blank"><i class="fab fa-youtube" title="YouTube" alt="YouTube"></i></a>
+            </li>
+        </ul>
+      </nav>
+      <p>
+        Last updated 2026-01-26
+        (commit
+        <a href="https://github.com/fatiando/website/commit/e69c815"><code>e69c815</code></a>)
+        <span class="bullet-separator">&bull;</span>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 8.2.3
+        <span class="bullet-separator">&bull;</span>
+        Source code for this website:
+        <a href="https://github.com/fatiando/website">
+           <i class="fab fa-github ms-1"></i> <code>fatiando/website</code>
+        </a>
+      </p>
+      <p>
+        Annonymous visitor statistics for this website are publicly available at
+        <a href="https://plausible.io/fatiando.org"><code>https://plausible.io/fatiando.org</code></a>
+      </p>
+      <p>
+        Copyright &copy; 2026 The Fatiando a Terra Developers.
+        Except where otherwise noted, all content is licensed <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a>.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap bundled Javascript (with their dependencies) -->
+  <script src="../_static/bootstrap-5.1/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>
