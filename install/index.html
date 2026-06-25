@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Installing our software — Fatiando a Terra</title>
+  <link rel="shortcut icon" href="../assets/favicon.png" />
+
+  <!-- OpenGraph social media card -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Installing our software" />
+  <meta property="og:description" content="Installing our software Our tools are built in Python and can be used in Jupyter notebooks, scripts, and other libraries and programs. All of our software is compatible with Linux, Mac, and..." />
+  <meta property="og:image" content="https://www.fatiando.org/assets/fatiando-social-banner.png" />
+  <meta property="og:url" content="https://www.fatiando.org/install/index.html" />
+
+  <!-- Ubuntu Fonts -->
+  <link rel="stylesheet" href="../fonts/ubuntu/font.css" />
+  <link rel="stylesheet" href="../fonts/ubuntu-mono/font.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../fonts/fontawesome/css/all.css" />
+
+  <!-- Andy Bell's CSS reset -->
+  <!-- https://bell.bz/a-more-modern-css-reset/ -->
+  <link rel="stylesheet" href="../css/reset.css" />
+
+  <!-- Syntax highlighting for code -->
+  <link rel="stylesheet" href="../css/pygments.css" />
+
+  <!-- Main CSS stylesheet -->
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <!-- Plausible analytics for anonymous usage statistics -->
+  <script defer data-domain="fatiando.org" src="https://plausible.io/js/plausible.js"></script>
+  
+</head>
+
+<body>
+  <header id="top" class="background-dark">
+    <div class="content-wide spread">
+      <a class="flex-center" href="../">
+        <img src="../assets/fatiando-logo.svg">
+        <span>Fatiando a Terra</span>
+      </a>
+      <div class="flex-center">
+        <nav aria-label="Main">
+          <ul class="list-inline-center" role="list">
+              <li>
+                <a class=""  href="../">Home</a>
+              </li>
+              <li>
+                <a class=""  href="../about/">About</a>
+              </li>
+              <li>
+                <a class="active" aria-current="page" href=".">Install</a>
+              </li>
+              <li>
+                <a class=""  href="../support/">Support</a>
+              </li>
+              <li>
+                <a class=""  href="../publications/">Publications</a>
+              </li>
+              <li>
+                <a class=""  href="../contact/">Contact</a>
+              </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="flow content margin-top-2xl margin-bottom-4xl">
+      <h1 id="installing-our-software">Installing our software</h1>
+<div class="lead">
+<p>Our tools are built in Python and can be used in Jupyter notebooks,
+scripts, and other libraries and programs. All of our software is
+compatible with <strong>Linux, Mac, and Windows</strong>.</p>
+</div>
+<h2 id="getting-python">Getting Python</h2>
+<p>In order to start using the Fatiando tools you need to <strong>install a Python
+distribution</strong>.
+We recommend using <a href="https://conda-forge.org/download/">the conda-forge installer</a>.
+It’s cross-platform and comes with the <code>conda</code> (or <code>mamba</code>) package manager
+already installed, which you can then use to install our software and other
+things.</p>
+<h2 id="install-the-latest-tools">Install the latest tools</h2>
+<p>Once you’ve finished setting up Python, you can install all of the latest
+Fatiando tools.</p>
+<p>The <strong>recommended</strong> method is using the <code>conda</code> (or <code>mamba</code>) package manager
+with a single command:</p>
+<div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>--channel<span class="w"> </span>conda-forge<span class="w"> </span>verde<span class="w"> </span>pooch<span class="w"> </span>harmonica<span class="w"> </span>boule<span class="w"> </span>ensaio<span class="w"> </span>choclo<span class="w"> </span>bordado
+</pre></div>
+<p>Alternatively, you can use the <code>pip</code> package manager:</p>
+<div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>verde<span class="w"> </span>pooch<span class="w"> </span>harmonica<span class="w"> </span>boule<span class="w"> </span>ensaio<span class="w"> </span>choclo<span class="w"> </span>bordado
+</pre></div>
+<div class="callout-tertiary">
+<p><strong>Tip:</strong>
+Run these commands in a terminal (Linux/Mac) or “Anaconda prompt” (Windows).</p>
+</div>
+<h2 id="installing-the-fatiando-package">Installing the “fatiando” package</h2>
+<p>The old <code>fatiando</code> package <strong>is not currently maintained or developed</strong>,
+meaning that <strong>it won’t get bug fixes or new features</strong>. The purpose of these
+instructions are for <strong>legacy use only</strong>, in order to run old code to check
+reproducibility of results.</p>
+<div class="callout-primary">
+<p><strong>Note:</strong>
+If you are working on some new research or data analysis, we <strong>strongly
+recommend</strong> using the <a href="#install-the-latest-tools">latest tools</a> instead.</p>
+</div>
+<p>If you need to install the old <code>fatiando</code> package, you can still do so through
+<code>conda</code>. Please note the following instructions were only tested under a GNU/Linux distribution, so
+we don’t guarantee that they will also work on a different OS.</p>
+<p>Since the old <code>fatiando</code> runs on Python 2.7, a deprecated version of Python,
+you need to create a separate environment for our installation in order to
+avoid conflicts with your Anaconda or conda-forge installation.</p>
+<p>Create a new environment and install the required packages:</p>
+<div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span>fatiando-legacy<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">2</span>.7<span class="w"> </span><span class="nv">numpy</span><span class="o">=</span><span class="m">1</span>.10<span class="w"> </span><span class="nv">scipy</span><span class="o">=</span><span class="m">1</span>.2<span class="w"> </span><span class="nv">matplotlib</span><span class="o">=</span><span class="m">2</span>.2<span class="w"> </span><span class="nv">pillow</span><span class="o">=</span><span class="m">6</span>.2<span class="w"> </span><span class="nv">future</span><span class="o">=</span><span class="m">0</span>.18<span class="w"> </span><span class="nv">numba</span><span class="o">=</span><span class="m">0</span>.43<span class="w"> </span><span class="nv">pytest</span><span class="o">=</span><span class="m">4</span>.6<span class="w"> </span><span class="nv">fatiando</span><span class="o">=</span><span class="m">0</span>.5
+</pre></div>
+<p>Activate the newly created environment:</p>
+<div class="highlight"><pre><span></span>conda<span class="w"> </span>activate<span class="w"> </span>fatiando-legacy
+</pre></div>
+<p>And test your installation:</p>
+<div class="highlight"><pre><span></span>python<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import fatiando; fatiando.test()&quot;</span>
+</pre></div>
+<p>You should see a green dot after each test is run and no red <code>F</code>.</p>
+<div class="callout-tertiary">
+<p><strong>More information:</strong>
+The documentation for the legacy <code>fatiando</code> package is available at
+<a href="https://legacy.fatiando.org">legacy.fatiando.org</a>.</p>
+</div>
+  </main>
+
+  <footer>
+    <div class="flow text-center content-wide">
+      <div class="spread">
+      <nav aria-label="Footer">
+        <ul class="list-inline-center" role="list">
+          <li>
+            <a class=""  href="../">Home</a>
+          </li>
+          <li>
+            <a class=""  href="../about/">About</a>
+          </li>
+          <li>
+            <a class="active" aria-current="page" href=".">Install</a>
+          </li>
+          <li>
+            <a class=""  href="../support/">Support</a>
+          </li>
+          <li>
+            <a class=""  href="../publications/">Publications</a>
+          </li>
+          <li>
+            <a class=""  href="../contact/">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="list-inline-center" role="list">
+        <li><a target="_blank" href="https://github.com/fatiando">GitHub</a></li>
+        <li><a target="_blank" href="https://github.com/orgs/fatiando/discussions">Forum</a></li>
+        <li><a target="_blank" href="https://zenodo.org/communities/fatiando">Zenodo</a></li>
+        <li><a target="_blank" href="https://www.youtube.com/fatiandoorg">YouTube</a></li>
+        <li><a target="_blank" href="https://www.linkedin.com/company/fatiando">LinkedIn</a></li>
+      </ul>
+      </div>
+      <div class="flow margin-top-xl font-small">
+        <p>
+          Last updated: 2026-06-25.
+          Created using <a href="https://nene.leouieda.com">Nēnē</a> v0.10.0.
+          Source code for this website: <a href="https://github.com/fatiando/website">fatiando/website</a>
+          (commit <a href="https://github.com/fatiando/website/commit/a9e915b">a9e915b</a>).
+        </p>
+        <p>
+          Copyright &copy; 2010-2026 The Fatiando a Terra Developers.
+          Except where otherwise noted, all content is licensed
+<a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.
+
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

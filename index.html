@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fatiando a Terra</title>
+  <link rel="shortcut icon" href="assets/favicon.png" />
+
+  <!-- OpenGraph social media card -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Fatiando a Terra" />
+  <meta property="og:description" content="Fatiando a Terra An open toolbox for the Geosciences. Fatiando provides Python libraries for data processing, modeling, and inversion across the Geosciences. It is built by a community of..." />
+  <meta property="og:image" content="https://www.fatiando.org/assets/fatiando-social-banner.png" />
+  <meta property="og:url" content="https://www.fatiando.org/index.html" />
+
+  <!-- Ubuntu Fonts -->
+  <link rel="stylesheet" href="fonts/ubuntu/font.css" />
+  <link rel="stylesheet" href="fonts/ubuntu-mono/font.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="fonts/fontawesome/css/all.css" />
+
+  <!-- Andy Bell's CSS reset -->
+  <!-- https://bell.bz/a-more-modern-css-reset/ -->
+  <link rel="stylesheet" href="css/reset.css" />
+
+  <!-- Syntax highlighting for code -->
+  <link rel="stylesheet" href="css/pygments.css" />
+
+  <!-- Main CSS stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Plausible analytics for anonymous usage statistics -->
+  <script defer data-domain="fatiando.org" src="https://plausible.io/js/plausible.js"></script>
+  
+</head>
+
+<body>
+  <header id="top" class="background-dark">
+    <div class="content-wide spread">
+      <a class="flex-center" href=".">
+        <img src="assets/fatiando-logo.svg">
+        <span>Fatiando a Terra</span>
+      </a>
+      <div class="flex-center">
+        <nav aria-label="Main">
+          <ul class="list-inline-center" role="list">
+              <li>
+                <a class="active" aria-current="page" href=".">Home</a>
+              </li>
+              <li>
+                <a class=""  href="about/">About</a>
+              </li>
+              <li>
+                <a class=""  href="install/">Install</a>
+              </li>
+              <li>
+                <a class=""  href="support/">Support</a>
+              </li>
+              <li>
+                <a class=""  href="publications/">Publications</a>
+              </li>
+              <li>
+                <a class=""  href="contact/">Contact</a>
+              </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="">
+      <div class="background-dark padding-vertical-4xl" style="background-image: url(images/background.svg); background-position: center; background-size: cover;" >
+<div class="row content-wide">
+<div class="col-small">
+  <img src="assets/fatiando-logo.svg" style="padding: 0 var(--space-l);">
+</div>
+<div class="col-large flow">
+<h1 id="fatiando-a-terra">Fatiando a Terra</h1>
+<p class="font-large font-bold">An open toolbox for the Geosciences.</p>
+<p>Fatiando provides <strong>Python libraries</strong> for data
+processing, modeling, and inversion across the Geosciences.</p>
+<p>It is built by a <strong>community</strong> of geoscientists and software developers with
+a passion for well-designed tools and helping our peers.</p>
+<p>All of our software is <strong>free and open-source</strong>.</p>
+<ul role="list" class="list-inline margin-top-l">
+<li><a class="button-link-primary" href="#libraries">The libraries</a></li>
+<li><a class="button-link-light" href="install">How to install</a></li>
+<li><a class="button-link-tertiary" href="support#cite-our-software">Cite the project</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="background-primary box-shadow padding-vertical-3xl">
+<div class="row content-wide">
+<div class="col-large flow">
+<h2 id="getting-started">Getting started</h2>
+<p><i class="fas fa-book"></i> <strong>Want to learn about our software?</strong>
+The best place to learn about each of our software libraries is their
+<em>documentation</em>. The docs always contain
+the <strong>most up-to-date information</strong>. See links to each project below.</p>
+<p><i class="fab fa-python"></i> <strong>New to Python?</strong> Take the <a href="https://software-carpentry.org/">Software
+Carpentry</a> lessons (online or in-person) to
+learn the basics. There are more lessons than just Python and everything they
+teach is definitely work learning!</p>
+<p><i class="fas fa-eye"></i> <strong>Rather watch a tutorial?</strong>
+Our <a href="https://www.youtube.com/fatiandoorg">YouTube channel</a> has video tutorials
+about some of our tools. The tutorials are always accompanied by code but they
+can get outdated over time.</p>
+<ul role="list" class="list-inline margin-top-l">
+<li><a class="button-link-light" href="contact">Got stuck? <strong>Contact us!</strong></a></li>
+</ul>
+</div>
+<div class="col-small">
+<figure>
+  <img src="images/transform21-tutorial.jpg"">
+  <figcaption>
+  Screenshot from our <a href="https://www.youtube.com/live/0bxZcCAr6bw">Harmonica tutorial at Transform 2021</a>.
+  </figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div id="libraries" class="content-wide flow padding-top-3xl">
+  <h2 class="heading-underline">Meet our libraries</h2>
+</div>
+<div id="verde" class="padding-top-xl padding-bottom-3xl ">
+<div class="row content-wide">
+<div class="col-large flow">
+<h3>Verde: Gridding, machine learning style</h3>
+<p>Verde offers <strong>spatial</strong> data processing and <strong>interpolation</strong> (gridding) with a sprinkling of machine learning.
+</p>
+<ul role="list">
+  <li><i class="fa fa-check fa-fw" style="color: var(--color-secondary)" title="Project status"></i> Stable and ready for use</li>
+<li><i class="fab fa-github fa-fw" title="GitHub repository"></i> Code: <a href="https://github.com/fatiando/verde">fatiando/verde</a></li>
+<li><i class="fas fa-book fa-fw" title="Documentation"></i> Docs: <a href="https://www.fatiando.org/verde/">fatiando.org/verde</a></li>
+<li><i class="fas fa-box-open fa-fw" title="Latest version"></i> Latest version: <a href="https://pypi.org/project/verde/">PyPI</a>, <a href="https://github.com/conda-forge/verde-feedstock/">conda-forge</a></li>
+<li><i class="fas fa-bookmark fa-fw" title="Publication"></i> doi: <a href="https://doi.org/10.21105/joss.00957">10.21105/joss.00957</a></li>
+</ul>
+</div>
+<div class="col-small flow">
+<figure>
+  <img src="images/examples/verde.jpg">
+<figcaption>Vertical ground velocity in California interpolated from GPS data with and without weights based on data uncertainty.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div id="pooch" class="padding-vertical-3xl background-semilight box-shadow">
+<div class="row-reverse content-wide">
+<div class="col-large flow">
+<h3>Pooch: Easily download datasets</h3>
+<p>Pooch is the easiest way to <strong>download data files</strong> to your computer. It is used to manage sample data downloads not only by our own tools but also other popular Scientific Python libraries: <a href="https://github.com/scikit-image/scikit-image">scikit-image</a>, <a href="https://github.com/scipy/scipy">SciPy</a>, <a href="https://github.com/Unidata/MetPy">MetPy</a>, <a href="https://github.com/pydata/xarray">xarray</a>, <a href="https://github.com/SHTOOLS/SHTOOLS">SHTOOLS</a>, <a href="https://github.com/pytroll/satpy">satpy</a>, <a href="https://github.com/icepack/icepack">icepack</a>, <a href="https://github.com/histolab/histolab">histolab</a>, <a href="https://github.com/yt-project/yt">yt</a>, <a href="https://github.com/napari/napari">napari</a>, and <a href="https://github.com/fatiando/pooch/network/dependents">more</a>.
+</p>
+<ul role="list">
+  <li><i class="fa fa-check fa-fw" style="color: var(--color-secondary)" title="Project status"></i> Stable and ready for use</li>
+<li><i class="fab fa-github fa-fw" title="GitHub repository"></i> Code: <a href="https://github.com/fatiando/pooch">fatiando/pooch</a></li>
+<li><i class="fas fa-book fa-fw" title="Documentation"></i> Docs: <a href="https://www.fatiando.org/pooch/">fatiando.org/pooch</a></li>
+<li><i class="fas fa-box-open fa-fw" title="Latest version"></i> Latest version: <a href="https://pypi.org/project/pooch/">PyPI</a>, <a href="https://github.com/conda-forge/pooch-feedstock/">conda-forge</a></li>
+<li><i class="fas fa-bookmark fa-fw" title="Publication"></i> doi: <a href="https://doi.org/10.21105/joss.01943">10.21105/joss.01943</a></li>
+</ul>
+</div>
+<div class="col-small flow">
+<figure>
+<div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pooch</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">xarray</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">xr</span>
+
+<span class="c1"># The Digital Object Identifier of the data</span>
+<span class="n">doi</span> <span class="o">=</span> <span class="s2">&quot;10.6084/m9.figshare.13643837&quot;</span>
+<span class="c1"># Known MD5 checksum (from figshare)</span>
+<span class="n">checksum</span> <span class="o">=</span> <span class="s2">&quot;md5:16c94a792003714efee2bdb4f3181d3a&quot;</span>
+<span class="c1"># Download the netCDF file and check integrity</span>
+<span class="n">fname</span> <span class="o">=</span> <span class="n">pooch</span><span class="o">.</span><span class="n">retrieve</span><span class="p">(</span>
+    <span class="n">url</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;doi:</span><span class="si">{</span><span class="n">doi</span><span class="si">}</span><span class="s2">/australia-ground-gravity.nc&quot;</span><span class="p">,</span>
+    <span class="n">known_hash</span><span class="o">=</span><span class="n">checksum</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="c1"># fname is the path to the file</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="n">fname</span><span class="p">)</span>
+</pre></div>
+<figcaption>Running this code multiple times will only result in a single download because the data are cached automatically.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div id="harmonica" class="padding-vertical-3xl ">
+<div class="row content-wide">
+<div class="col-large flow">
+<h3>Harmonica: All things potential fields</h3>
+<p>Harmonica is our library for processing, forward modeling, and inversion of <strong>gravity and magnetic</strong> data. Our goal is to incentivise good practices by <strong>carefully designing</strong> the software and offering <strong>state-of-the-art methods</strong> with efficient implementations.
+</p>
+<ul role="list">
+  <li><i class="fa fa-sync-alt fa-fw" style="color: var(--color-primary)" title="Project status"></i> Ready for use but still changing</li>
+<li><i class="fab fa-github fa-fw" title="GitHub repository"></i> Code: <a href="https://github.com/fatiando/harmonica">fatiando/harmonica</a></li>
+<li><i class="fas fa-book fa-fw" title="Documentation"></i> Docs: <a href="https://www.fatiando.org/harmonica/">fatiando.org/harmonica</a></li>
+<li><i class="fas fa-box-open fa-fw" title="Latest version"></i> Latest version: <a href="https://pypi.org/project/harmonica/">PyPI</a>, <a href="https://github.com/conda-forge/harmonica-feedstock/">conda-forge</a></li>
+<li><i class="fas fa-bookmark fa-fw" title="Publication"></i> doi: <a href="https://doi.org/10.5281/zenodo.3628741">10.5281/zenodo.3628741</a></li>
+</ul>
+</div>
+<div class="col-small flow">
+<figure>
+  <img src="images/examples/harmonica.png">
+<figcaption>Residual gravity disturbances of the Bushveld Complex, South Africa, gridded to a uniform height with equivalent sources.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div id="boule" class="padding-vertical-3xl background-semilight box-shadow">
+<div class="row-reverse content-wide">
+<div class="col-large flow">
+<h3>Boule: Ellipsoids and normal gravity</h3>
+<p>Boule defines <strong>reference ellipsoids</strong> for coordinate conversions and calculating normal gravity of the Earth and other planetary bodies (Moon, Mars, Venus, Mercury, and more).
+</p>
+<ul role="list">
+  <li><i class="fa fa-sync-alt fa-fw" style="color: var(--color-primary)" title="Project status"></i> Ready for use but still changing</li>
+<li><i class="fab fa-github fa-fw" title="GitHub repository"></i> Code: <a href="https://github.com/fatiando/boule">fatiando/boule</a></li>
+<li><i class="fas fa-book fa-fw" title="Documentation"></i> Docs: <a href="https://www.fatiando.org/boule/">fatiando.org/boule</a></li>
+<li><i class="fas fa-box-open fa-fw" title="Latest version"></i> Latest version: <a href="https://pypi.org/project/boule/">PyPI</a>, <a href="https://github.com/conda-forge/boule-feedstock/">conda-forge</a></li>
+<li><i class="fas fa-bookmark fa-fw" title="Publication"></i> doi: <a href="https://doi.org/10.5281/zenodo.3530749">10.5281/zenodo.3530749</a></li>
+</ul>
+</div>
+<div class="col-small flow">
+<figure>
+  <img src="images/examples/boule.png">
+<figcaption>Normal gravity of the WGS84 ellipsoid calculated at the Earth's surface using an analytical expression (no free-air correction required).
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div id="ensaio" class="padding-vertical-3xl ">
+<div class="row content-wide">
+<div class="col-large flow">
+<h3>Ensaio: Practice datasets to probe your code</h3>
+<p>Ensaio makes it easy to download our open-access <strong>sample datasets</strong>. It taps into the <a href="https://github.com/fatiando-data">Fatiando a Terra FAIR data collection</a> which is designed for use in tutorials, documentation, and teaching.
+</p>
+<ul role="list">
+  <li><i class="fa fa-sync-alt fa-fw" style="color: var(--color-primary)" title="Project status"></i> Ready for use but still changing</li>
+<li><i class="fab fa-github fa-fw" title="GitHub repository"></i> Code: <a href="https://github.com/fatiando/ensaio">fatiando/ensaio</a></li>
+<li><i class="fas fa-book fa-fw" title="Documentation"></i> Docs: <a href="https://www.fatiando.org/ensaio/">fatiando.org/ensaio</a></li>
+<li><i class="fas fa-box-open fa-fw" title="Latest version"></i> Latest version: <a href="https://pypi.org/project/ensaio/">PyPI</a>, <a href="https://github.com/conda-forge/ensaio-feedstock/">conda-forge</a></li>
+<li><i class="fas fa-bookmark fa-fw" title="Publication"></i> doi: <a href="https://doi.org/10.5281/zenodo.5784202">10.5281/zenodo.5784202</a></li>
+</ul>
+</div>
+<div class="col-small flow">
+<figure>
+  <img src="images/examples/ensaio.jpg">
+<figcaption>A sample of the datasets available in Ensaio. From the top-left: gravity, geoid height, bathymetry, GPS velocity, global relief, and magnetic anomaly.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div id="choclo" class="padding-vertical-3xl background-semilight box-shadow">
+<div class="row-reverse content-wide">
+<div class="col-large flow">
+<h3>Choclo: Kernel functions for geophysical models</h3>
+<p>Optimized <a href="https://numba.pydata.org">numba</a>-compatible <strong>forward modelling</strong> functions for <strong>gravity</strong> and <strong>magnetic</strong> fields, specially tailored to be reused by other libraries, like Harmonica, Magali, and <a href="https://simpeg.xyz/">SimPEG</a>.
+</p>
+<ul role="list">
+  <li><i class="fa fa-sync-alt fa-fw" style="color: var(--color-primary)" title="Project status"></i> Ready for use but still changing</li>
+<li><i class="fab fa-github fa-fw" title="GitHub repository"></i> Code: <a href="https://github.com/fatiando/choclo">fatiando/choclo</a></li>
+<li><i class="fas fa-book fa-fw" title="Documentation"></i> Docs: <a href="https://www.fatiando.org/choclo/">fatiando.org/choclo</a></li>
+<li><i class="fas fa-box-open fa-fw" title="Latest version"></i> Latest version: <a href="https://pypi.org/project/choclo/">PyPI</a>, <a href="https://github.com/conda-forge/choclo-feedstock/">conda-forge</a></li>
+<li><i class="fas fa-bookmark fa-fw" title="Publication"></i> doi: <a href="https://doi.org/10.5281/zenodo.7851747">10.5281/zenodo.7851747</a></li>
+</ul>
+</div>
+<div class="col-small flow">
+<figure>
+<div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">choclo</span>
+
+<span class="c1"># Define observation point</span>
+<span class="n">easting</span><span class="p">,</span> <span class="n">northing</span><span class="p">,</span> <span class="n">upward</span> <span class="o">=</span> <span class="mf">10.4e3</span><span class="p">,</span> <span class="o">-</span><span class="mf">5.6e3</span><span class="p">,</span> <span class="mf">110.</span>
+<span class="c1"># Define prism boundaries and physical properties</span>
+<span class="n">prism</span> <span class="o">=</span> <span class="p">[</span><span class="mf">4e3</span><span class="p">,</span> <span class="mf">12e3</span><span class="p">,</span> <span class="o">-</span><span class="mf">10e3</span><span class="p">,</span> <span class="o">-</span><span class="mf">2e3</span><span class="p">,</span> <span class="o">-</span><span class="mf">300.</span><span class="p">,</span> <span class="mf">20.</span><span class="p">]</span>
+<span class="n">magnetization</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.2</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.3</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">]</span>
+<span class="c1"># Compute magnetic field of the prism</span>
+<span class="n">b_e</span><span class="p">,</span> <span class="n">b_n</span><span class="p">,</span> <span class="n">b_u</span> <span class="o">=</span> <span class="n">choclo</span><span class="o">.</span><span class="n">prism</span><span class="o">.</span><span class="n">magnetic_field</span><span class="p">(</span>
+    <span class="n">easting</span><span class="p">,</span> <span class="n">northing</span><span class="p">,</span> <span class="n">upward</span><span class="p">,</span> <span class="o">*</span><span class="n">prism</span><span class="p">,</span> <span class="o">*</span><span class="n">magnetization</span>
+<span class="p">)</span>
+</pre></div>
+<figcaption>This code for calculating the magnetic field generated by a prism can be put in a loop inside a <code>numba.jit</code> function to speed it up.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div id="bordado" class="padding-vertical-3xl ">
+<div class="row content-wide">
+<div class="col-large flow">
+<h3>Bordado: Create and split geographic coordinates</h3>
+<p>Bordado can generate coordinates for <strong>regular grids and meshes</strong>, split points based on <strong>spatial blocks and rolling windows</strong>, and perform other operations on spatially distributed points.
+</p>
+<ul role="list">
+  <li><i class="fa fa-sync-alt fa-fw" style="color: var(--color-primary)" title="Project status"></i> Ready for use but still changing</li>
+<li><i class="fab fa-github fa-fw" title="GitHub repository"></i> Code: <a href="https://github.com/fatiando/bordado">fatiando/bordado</a></li>
+<li><i class="fas fa-book fa-fw" title="Documentation"></i> Docs: <a href="https://www.fatiando.org/bordado/">fatiando.org/bordado</a></li>
+<li><i class="fas fa-box-open fa-fw" title="Latest version"></i> Latest version: <a href="https://pypi.org/project/bordado/">PyPI</a>, <a href="https://github.com/conda-forge/bordado-feedstock/">conda-forge</a></li>
+<li><i class="fas fa-bookmark fa-fw" title="Publication"></i> doi: <a href="https://doi.org/10.5281/zenodo.15051755">10.5281/zenodo.15051755</a></li>
+</ul>
+</div>
+<div class="col-small flow">
+<figure>
+  <img src="images/examples/bordado.gif">
+<figcaption>Animation of splitting a set of random points along the globe using rolling windows with equal area. The yellow points are the window centers.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="background-primary box-shadow padding-vertical-3xl">
+<div class="row content-wide">
+<div class="col-large flow">
+<h2 id="interested">Interested?</h2>
+<p>We are always happy to <strong>welcome anyone</strong> who is interested in getting
+involved!
+Whether it be coding, teaching, designing, or just hanging out.
+Getting involved in open-source can be a great way to meet new people, improve
+your coding skills, and <strong>make an impact</strong> in your field.</p>
+<ul role="list" class="list-inline margin-top-l">
+<li><a class="button-link-tertiary" href="contact">Come say "Hi!" 👋🏾</a></li>
+</ul>
+</div>
+<div class="col-small flow">
+<figure>
+  <img src="images/fatiando-community-call.jpg" title="Screenshot from a virtual Fatiando weekly call.">
+  <figcaption>
+  Happy community members at one of our regular <a href="contact">Fatiando open calls</a>, where we discuss the project and future plans.
+  </figcaption>
+</figure>
+</div>
+</div>
+</div>
+  </main>
+
+  <footer>
+    <div class="flow text-center content-wide">
+      <div class="spread">
+      <nav aria-label="Footer">
+        <ul class="list-inline-center" role="list">
+          <li>
+            <a class="active" aria-current="page" href=".">Home</a>
+          </li>
+          <li>
+            <a class=""  href="about/">About</a>
+          </li>
+          <li>
+            <a class=""  href="install/">Install</a>
+          </li>
+          <li>
+            <a class=""  href="support/">Support</a>
+          </li>
+          <li>
+            <a class=""  href="publications/">Publications</a>
+          </li>
+          <li>
+            <a class=""  href="contact/">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="list-inline-center" role="list">
+        <li><a target="_blank" href="https://github.com/fatiando">GitHub</a></li>
+        <li><a target="_blank" href="https://github.com/orgs/fatiando/discussions">Forum</a></li>
+        <li><a target="_blank" href="https://zenodo.org/communities/fatiando">Zenodo</a></li>
+        <li><a target="_blank" href="https://www.youtube.com/fatiandoorg">YouTube</a></li>
+        <li><a target="_blank" href="https://www.linkedin.com/company/fatiando">LinkedIn</a></li>
+      </ul>
+      </div>
+      <div class="flow margin-top-xl font-small">
+        <p>
+          Last updated: 2026-06-25.
+          Created using <a href="https://nene.leouieda.com">Nēnē</a> v0.10.0.
+          Source code for this website: <a href="https://github.com/fatiando/website">fatiando/website</a>
+          (commit <a href="https://github.com/fatiando/website/commit/a9e915b">a9e915b</a>).
+        </p>
+        <p>
+          Copyright &copy; 2010-2026 The Fatiando a Terra Developers.
+          Except where otherwise noted, all content is licensed
+<a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.
+
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
